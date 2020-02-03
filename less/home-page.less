@@ -1,5 +1,3 @@
-
-
 article.top {
     display: flex;
     background-image: linear-gradient(to right, @amber-white, @light-gray);
@@ -8,10 +6,15 @@ article.top {
 .left-home-section {
     width: 40%;
     padding: 5%;
+
+    img {
+        width: 130%;
+    }
+
 }
 
 .right-home-section {
-    padding-top: 10%;
+    padding: 10% 0 0 5%;
 
     p {
         width: 70%;
@@ -58,5 +61,62 @@ main {
             }
 
         }
+    }
+}
+
+@media @tablet {
+    .app-display-img {
+        display: none;
+    }
+
+    .left-home-section {
+        width: 40%;
+        padding: 5%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .right-home-section {
+
+        padding-top: 5%;
+        margin: 0;
+        width: 60%;
+    
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .top-article section p.tablet {
+        font-size: 1.6rem;
+    }
+
+    .top-article section h3.tablet {
+        font-size: 1.4rem;
+    }
+
+    main article.bottom-article {
+        display: flex;
+        background-color: @main-block-background-color;
+
+        section:first-child {
+            width: 100%;
+            padding: 0 5% 5%;
+
+            h2 {
+                margin-bottom: 2%;
+            }
+
+            p {
+                padding: 0;
+            }
+
+        }
+    }
+
+    footer p {
+        font-size: 1.2rem;
     }
 }
