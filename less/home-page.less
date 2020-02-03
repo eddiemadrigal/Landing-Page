@@ -3,14 +3,18 @@ div.container {
     margin-top: .5%;
 }
 
+.top {
+    margin: 0;
+}
+
 .top-nav {
     background-color: @top-nav-background-color;
     padding: 1% 2%;
-}
 
-.top-nav ul {
-    display: flex;
-    justify-content: flex-end;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 li.left {
@@ -23,6 +27,7 @@ li.right {
 
 article.top {
     display: flex;
+    background-image: linear-gradient(to right, @amber-white, @light-gray);
 }
 
 .left-home-section {
@@ -32,4 +37,29 @@ article.top {
 
 .right-home-section {
     padding-top: 10%;
+
+    p {
+        width: 70%;
+    }
+}
+
+main article {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+
+    section {
+        background-color: @main-block-background-color;
+        width: 32%;
+
+        p {
+            padding: 2%;
+        }
+
+        p.fawe {
+            color: green;
+            text-align: center;
+            margin-top: 5%;
+        }
+    }
 }

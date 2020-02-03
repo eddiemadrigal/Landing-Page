@@ -9,8 +9,7 @@
   
   html,
   body {
-    font-family: 'Ubuntu', sans-serif;
-    color: @main-font-color; 
+    color: @main-font-color;
   }
   
   .container {
@@ -24,8 +23,7 @@
   h3,
   h4,
   h5 {
-    font-family: 'Russo One', sans-serif;
-    color: @header-font-color;
+    font-family: @main-font-family;
   }
 
   .top-nav ul li {
@@ -39,7 +37,15 @@
     margin-bottom: 1%;
   }
 
+  h3 {
+    color: @h3-text-color;
+    font-size:2rem;
+    font-weight: bold;
+    padding: 2%;
+  }
+
   p {
+    font-family: @main-font-family;
     font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 2%;
