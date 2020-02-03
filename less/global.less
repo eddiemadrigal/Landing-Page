@@ -2,15 +2,45 @@
 * {
     box-sizing: border-box;
   }
-  
-  html {
-    font-size: 62.5%;
+
+  a {
+    color: @amber-white;
+    text-decoration: none;
   }
   
   html,
   body {
+    font-size: 62.5%;
     color: @main-font-color;
   }
+
+  div.container {
+    width: 95%;
+    margin-top: .5%;
+}
+
+.top {
+    margin: 0;
+}
+
+.top-nav {
+    background-color: @top-nav-background-color;
+    padding: 1% 2% 0;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 30px;
+    }
+}
+
+li.left {
+    margin-right: auto;
+}
+
+li.right {
+    margin-left: 20px;
+}
   
   .container {
     max-width: 95%;
@@ -90,4 +120,22 @@
         color: @footer-green-color;
     }
 
+  }
+
+  main.about article {
+    display: block;
+    width: 80%;
+    margin: 14% auto;
+
+    h3 {
+      padding: 0;
+      text-align: center;
+      margin-bottom: 4%;
+    }
+
+  }
+
+  .focus {
+    border-bottom: 2px solid @amber-white;
+    max-height: 100%;
   }
