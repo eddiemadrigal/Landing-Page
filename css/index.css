@@ -229,7 +229,7 @@ footer p {
   margin-bottom: 0;
 }
 footer p:nth-child(1) {
-  margin-right: 28%;
+  margin-right: 23%;
 }
 footer p:nth-child(1) span {
   color: #00A35E;
@@ -248,9 +248,29 @@ main.about article h3 {
   text-align: center;
   margin-bottom: 4%;
 }
+main.about article p {
+  text-align: center;
+}
 .focus {
   border-bottom: 2px solid #fff;
   max-height: 100%;
+}
+main.contact article {
+  display: block;
+  width: 80%;
+  margin: 0 auto 4%;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+form table {
+  margin: 0 auto;
+}
+h3.contact-title {
+  text-align: center;
+  margin-top: 5%;
 }
 article.top {
   display: flex;
