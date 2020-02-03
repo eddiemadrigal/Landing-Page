@@ -26,9 +26,14 @@
     font-family: @main-font-family;
   }
 
+  .top-nav ul {
+    font-family: @nav-font-family;
+  }
+
   .top-nav ul li {
     font-size: 2rem;
-    color: #fff;
+    color: @amber-white;
+    
   }
 
   h2 {
@@ -53,8 +58,36 @@
 
   button {
     padding: 1% 3%;
-    background-color: #fff;
+    background-color: @amber-white;
     color: #00A35E;
     border-color: #00A35E;
     border-radius: 5px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: @footer-background-color;
+    padding: 0;
+
+    p {
+      color: @amber-white;
+      padding: 2%;
+      margin-bottom: 0;
+    }
+
+    p:nth-child(1) {
+      margin-right:28%;
+
+      span {
+          color: @footer-green-color;
+      }
+
+    }
+
+    p:nth-child(2) {
+        padding-right: 4%;
+        color: @footer-green-color;
+    }
+
   }

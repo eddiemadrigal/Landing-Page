@@ -43,23 +43,45 @@ article.top {
     }
 }
 
-main article {
-    display: flex;
-    justify-content: space-between;
-    margin: 2% auto;
+main {
+    article {
+        display: flex;
+        justify-content: space-between;
+        margin: 2% auto 0;
 
-    section {
-        background-color: @main-block-background-color;
-        width: 32%;
+        section {
+            background-color: @main-block-background-color;
+            width: 32%;
 
-        p {
-            padding: 2%;
+            p {
+                padding: 2%;
+            }
+
+            p.fawe {
+                color: green;
+                text-align: center;
+                margin-top: 5%;
+            }
         }
+    }
 
-        p.fawe {
-            color: green;
-            text-align: center;
-            margin-top: 5%;
+    article.bottom-article {
+        display: flex;
+        padding-top: 5%;
+        background-color: @main-block-background-color;
+
+        section:first-child {
+            width: 80%;
+            padding: 10% 10% 0;
+
+            h2 {
+                margin-bottom: 2%;
+            }
+
+            p {
+                padding: 0;
+            }
+
         }
     }
 }

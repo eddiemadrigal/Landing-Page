@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Hind Regular'), local('Hind-Regular'), url(https://fonts.gstatic.com/s/hind/v10/5aU69_a8oxmIdGl4AQ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
@@ -155,6 +162,9 @@ h4,
 h5 {
   font-family: 'Roboto Slab', serif;
 }
+.top-nav ul {
+  font-family: 'Hind', sans-serif;
+}
 .top-nav ul li {
   font-size: 2rem;
   color: #fff;
@@ -182,6 +192,27 @@ button {
   color: #00A35E;
   border-color: #00A35E;
   border-radius: 5px;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2D2D2D;
+  padding: 0;
+}
+footer p {
+  color: #fff;
+  padding: 2%;
+  margin-bottom: 0;
+}
+footer p:nth-child(1) {
+  margin-right: 28%;
+}
+footer p:nth-child(1) span {
+  color: #00A35E;
+}
+footer p:nth-child(2) {
+  padding-right: 4%;
+  color: #00A35E;
 }
 div.container {
   width: 95%;
@@ -221,7 +252,7 @@ article.top {
 main article {
   display: flex;
   justify-content: space-between;
-  margin: 2% auto;
+  margin: 2% auto 0;
 }
 main article section {
   background-color: #f5f5f5;
@@ -234,4 +265,19 @@ main article section p.fawe {
   color: green;
   text-align: center;
   margin-top: 5%;
+}
+main article.bottom-article {
+  display: flex;
+  padding-top: 5%;
+  background-color: #f5f5f5;
+}
+main article.bottom-article section:first-child {
+  width: 80%;
+  padding: 10% 10% 0;
+}
+main article.bottom-article section:first-child h2 {
+  margin-bottom: 2%;
+}
+main article.bottom-article section:first-child p {
+  padding: 0;
 }
