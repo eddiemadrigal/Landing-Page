@@ -287,8 +287,9 @@ footer p:nth-child(2) {
   }
   nav.top-nav ul {
     flex-direction: column;
-    height: 100px;
-    margin-top: 70px;
+    height: 145px;
+    margin-top: 15px;
+    display: none;
   }
   nav.top-nav ul li {
     line-height: 1.6rem;
