@@ -14,56 +14,12 @@ body {
   color: @main-font-color;
 }
 
-div.container {
-  width: 95%;
-  margin-top: .5%;
-}
-
-.top {
-  margin: 0;
-}
-
-.top-nav {
-  background-color: @top-nav-background-color;
-  padding: 1% 2% 0;
-
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    height: 30px;
-  }
-}
-
-li.left {
-  margin-right: auto;
-}
-
-li.right {
-  margin-left: 20px;
-}
-
-.container {
-  max-width: 95%;
-  width: 100%;
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: @main-font-family;
-}
-
-.top-nav ul {
-  font-family: @nav-font-family;
-}
-
-.top-nav ul li {
-  font-size: 2rem;
-  color: @amber-white;
-
 }
 
 h2 {
@@ -93,6 +49,51 @@ button {
   border-color: #00A35E;
   border-radius: 5px;
 }
+
+div.container {
+  width: 95%;
+  margin-top: .5%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.top-nav {
+  background-color: @top-nav-background-color;
+  padding: 0 2%;
+
+  span.top-nav-title {
+    font-size: 2rem;
+    color: @amber-white;
+    font-family: @nav-font-family;
+    display: inline-block;
+    padding-top: 25px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    font-family: @nav-font-family;
+    margin-top: -20px;
+
+    li {
+      font-size: 2rem;
+      color: @amber-white;
+    }
+
+    li.left {
+      margin-right: auto;
+
+    }
+
+    li.right {
+      margin-left: 20px;
+    }
+
+  }
+}
+
+
 
 main.about article {
   display: block;
@@ -168,6 +169,41 @@ footer {
   p:nth-child(2) {
     padding-right: 4%;
     color: @footer-green-color;
+  }
+
+}
+
+@media @mobile {
+  nav.top-nav {
+    background-color: @top-nav-background-color-mobile;
+
+    ul {
+      flex-direction: column;
+      height: 100px;
+      margin-top: 70px;
+
+      li {
+        line-height: 1.6rem;
+        padding-bottom: 4%;
+      }
+
+    }
+  }
+
+  .focus {
+    border-bottom: none;
+    max-height: 100%;
+  }
+
+  span.top-nav-title {
+    background-color: @top-nav-background-color;
+    font-size: 2rem;
+    color: @amber-white;
+    font-family: @nav-font-family;
+    display: block;
+    padding: 3% 0 3% 3%;
+    width: 104%;
+    margin-left: -1.90%;
   }
 
 }

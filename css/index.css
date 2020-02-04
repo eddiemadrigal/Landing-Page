@@ -152,46 +152,12 @@ body {
   font-size: 62.5%;
   color: #111;
 }
-div.container {
-  width: 95%;
-  margin-top: 0.5%;
-}
-.top {
-  margin: 0;
-}
-.top-nav {
-  background-color: #00A35E;
-  padding: 1% 2% 0;
-}
-.top-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  height: 30px;
-}
-li.left {
-  margin-right: auto;
-}
-li.right {
-  margin-left: 20px;
-}
-.container {
-  max-width: 95%;
-  width: 100%;
-  margin: 0 auto;
-}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: 'Roboto Slab', serif;
-}
-.top-nav ul {
-  font-family: 'Hind', sans-serif;
-}
-.top-nav ul li {
-  font-size: 2rem;
-  color: #fff;
 }
 h2 {
   color: #00A35E;
@@ -216,6 +182,40 @@ button {
   color: #00A35E;
   border-color: #00A35E;
   border-radius: 5px;
+}
+div.container {
+  width: 95%;
+  margin-top: 0.5%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.top-nav {
+  background-color: #00A35E;
+  padding: 0 2%;
+}
+.top-nav span.top-nav-title {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  display: inline-block;
+  padding-top: 25px;
+}
+.top-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  font-family: 'Hind', sans-serif;
+  margin-top: -20px;
+}
+.top-nav ul li {
+  font-size: 2rem;
+  color: #fff;
+}
+.top-nav ul li.left {
+  margin-right: auto;
+}
+.top-nav ul li.right {
+  margin-left: 20px;
 }
 main.about article {
   display: block;
@@ -276,6 +276,34 @@ footer p:nth-child(1) span {
 footer p:nth-child(2) {
   padding-right: 4%;
   color: #00A35E;
+}
+@media (max-width: 576px) {
+  nav.top-nav {
+    background-color: #007343;
+  }
+  nav.top-nav ul {
+    flex-direction: column;
+    height: 100px;
+    margin-top: 70px;
+  }
+  nav.top-nav ul li {
+    line-height: 1.6rem;
+    padding-bottom: 4%;
+  }
+  .focus {
+    border-bottom: none;
+    max-height: 100%;
+  }
+  span.top-nav-title {
+    background-color: #00A35E;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+    display: block;
+    padding: 3% 0 3% 3%;
+    width: 104%;
+    margin-left: -1.9%;
+  }
 }
 article.top {
   display: flex;
@@ -367,5 +395,29 @@ main article.bottom-article section:first-child p {
   }
   footer p {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  article.top {
+    display: block;
+  }
+  .left-home-section {
+    width: 100%;
+  }
+  .left-home-section img {
+    width: 100%;
+  }
+  .right-home-section {
+    width: 100%;
+    padding-bottom: 4%;
+  }
+  .right-home-section p {
+    width: 100%;
+  }
+  main article {
+    display: block;
+  }
+  main article section {
+    width: 100%;
   }
 }
