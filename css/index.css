@@ -183,6 +183,9 @@ button {
   border-color: #00A35E;
   border-radius: 5px;
 }
+.top-nav-collapse-link {
+  display: none;
+}
 div.container {
   width: 95%;
   margin-top: 0.5%;
@@ -280,6 +283,7 @@ footer p:nth-child(2) {
 @media (max-width: 576px) {
   nav.top-nav {
     background-color: #007343;
+    padding: 0;
   }
   nav.top-nav ul {
     flex-direction: column;
@@ -290,19 +294,31 @@ footer p:nth-child(2) {
     line-height: 1.6rem;
     padding-bottom: 4%;
   }
+  nav.top-nav section {
+    background-color: #00A35E;
+    width: 100%;
+    padding: 10px 0;
+    height: 60px;
+  }
   .focus {
     border-bottom: none;
     max-height: 100%;
   }
-  span.top-nav-title {
+  .top-nav span.top-nav-title {
     background-color: #00A35E;
     font-size: 2rem;
     color: #fff;
     font-family: 'Hind', sans-serif;
-    display: block;
-    padding: 3% 0 3% 3%;
-    width: 104%;
-    margin-left: -1.9%;
+    display: inline-block;
+    width: 45%;
+    padding: 0 0 10px 20px;
+  }
+  span.top-nav-collapse-link {
+    background-color: #00A35E;
+    display: inline-block;
+    width: 50%;
+    color: #fff;
+    text-align: right;
   }
 }
 article.top {

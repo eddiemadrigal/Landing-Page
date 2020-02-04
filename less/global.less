@@ -50,6 +50,10 @@ button {
   border-radius: 5px;
 }
 
+.top-nav-collapse-link {
+  display: none;
+}
+
 div.container {
   width: 95%;
   margin-top: .5%;
@@ -176,6 +180,7 @@ footer {
 @media @mobile {
   nav.top-nav {
     background-color: @top-nav-background-color-mobile;
+    padding: 0;
 
     ul {
       flex-direction: column;
@@ -188,6 +193,13 @@ footer {
       }
 
     }
+
+    section {
+      background-color: @top-nav-background-color;
+      width: 100%;
+      padding: 10px 0;
+      height: 60px;
+    }
   }
 
   .focus {
@@ -195,15 +207,24 @@ footer {
     max-height: 100%;
   }
 
-  span.top-nav-title {
+  .top-nav {
+    span.top-nav-title {
+      background-color: @top-nav-background-color;
+      font-size: 2rem;
+      color: @amber-white;
+      font-family: @nav-font-family;
+      display: inline-block;
+      width: 45%;
+      padding: 0 0 10px 20px;
+    }
+  }
+
+  span.top-nav-collapse-link {
     background-color: @top-nav-background-color;
-    font-size: 2rem;
+    display: inline-block;
+    width: 50%;
     color: @amber-white;
-    font-family: @nav-font-family;
-    display: block;
-    padding: 3% 0 3% 3%;
-    width: 104%;
-    margin-left: -1.90%;
+    text-align: right;
   }
 
 }
