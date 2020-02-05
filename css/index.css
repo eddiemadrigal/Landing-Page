@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -268,7 +268,7 @@ footer p {
 footer p:nth-child(1) {
   margin-right: 23%;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   footer p:nth-child(1) {
     margin-right: 19%;
   }
@@ -280,7 +280,7 @@ footer p:nth-child(2) {
   padding-right: 4%;
   color: #00A35E;
 }
-@media (max-width: 576px) {
+@media (max-width: 578px) {
   nav.top-nav {
     background-color: #007343;
     padding: 0;
@@ -320,6 +320,11 @@ footer p:nth-child(2) {
     width: 50%;
     color: #fff;
     text-align: right;
+  }
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 1.2rem;
   }
 }
 article.top {
@@ -371,7 +376,7 @@ main article.bottom-article section:first-child h2 {
 main article.bottom-article section:first-child p {
   padding: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .app-display-img {
     display: none;
   }
@@ -410,11 +415,8 @@ main article.bottom-article section:first-child p {
   main article.bottom-article section:first-child p {
     padding: 0;
   }
-  footer p {
-    font-size: 1.2rem;
-  }
 }
-@media (max-width: 576px) {
+@media (max-width: 578px) {
   article.top {
     display: block;
   }
