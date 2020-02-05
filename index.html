@@ -14,9 +14,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
+  <script>
+    function getWidth() {
+      var w = window.outerWidth;
+      var h = window.outerHeight;
+      var txt = "Window size: width=" + w + ", height=" + h;
+      document.getElementById("size").innerHTML = txt;
+    }
+  </script>
+
 </head>
 
-<body>
+<body onresize="getWidth();" onload="getWidth();">
+</head> 
+<p id="size" style="text-align: center; padding: 0; margin: 0;"></p>
   <div class="container">
     <header>
 

@@ -1,5 +1,37 @@
 // Footer Styles
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: @footer-background-color;
+    padding: 0;
+  
+    p {
+      color: @amber-white;
+      padding: 2%;
+      margin-bottom: 0;
+    }
+  
+    p:nth-child(1) {
+      margin-right: 23%;
+  
+      @media @tablet {
+        margin-right: 19%;
+      }
+  
+      span {
+        color: @footer-green-color;
+      }
+  
+    }
+  
+    p:nth-child(2) {
+      padding-right: 4%;
+      color: @footer-green-color;
+    }
+  
+  }
+
 @media @tablet {
 
     footer p {
