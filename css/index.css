@@ -187,6 +187,11 @@ a {
   border-bottom: 2px solid #fff;
   max-height: 100%;
 }
+@media (max-width: 576px) {
+  .focus {
+    border-bottom: none;
+  }
+}
 div.container {
   width: 95%;
   margin-top: 0.5%;
@@ -222,12 +227,6 @@ form table {
 h3.contact-title {
   text-align: center;
   margin-top: 5%;
-}
-@media (max-width: 576px) {
-  .focus {
-    border-bottom: none;
-    max-height: 100%;
-  }
 }
 .top-nav-collapse-link {
   display: none;

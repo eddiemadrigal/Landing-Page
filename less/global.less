@@ -55,6 +55,13 @@ a {
 .focus {
   border-bottom: 2px solid @amber-white;
   max-height: 100%;
+
+  @media @mobile {
+
+    border-bottom: none;
+
+  }
+
 }
 
 // container
@@ -65,8 +72,6 @@ div.container {
   max-width: 95%;
   margin: 0 auto;
 }
-
-
 
 // Main section styling
 
@@ -91,8 +96,6 @@ main.contact article {
   display: block;
   width: 80%;
   margin: 0 auto 4%;
-
-
 }
 
 form {
@@ -109,15 +112,4 @@ form {
 h3.contact-title {
   text-align: center;
   margin-top: 5%;
-}
-
-
-
-@media @mobile {
-
-  .focus {
-    border-bottom: none;
-    max-height: 100%;
-  }
-  
 }
