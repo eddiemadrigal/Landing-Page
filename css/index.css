@@ -12,6 +12,18 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
 }
+.displayFlex {
+  display: block;
+  width: 80%;
+}
+.amberWhite2rem {
+  font-size: 2rem;
+  color: #fff;
+}
+.fontFamInlineBlock {
+  font-family: 'Hind', sans-serif;
+  display: inline-block;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,8 +180,8 @@ h3 {
 }
 p {
   font-family: 'Roboto Slab', serif;
-  font-size: 2rem;
   line-height: 1.5;
+  font-size: 2rem;
   margin-bottom: 2%;
 }
 button {
@@ -194,7 +206,6 @@ a {
 }
 div.container {
   width: 95%;
-  margin-top: 0.5%;
   max-width: 95%;
   margin: 0 auto;
 }
