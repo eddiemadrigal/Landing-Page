@@ -8,7 +8,7 @@ function toggleMenu() {
 }
 
 function showMenu() {
-    if (window.innerWidth > 576) {
+    if (window.innerWidth > 501) {
         if (x.style.display === "none") {
             x.style.display = "flex";
         }

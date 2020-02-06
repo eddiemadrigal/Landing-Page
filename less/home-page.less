@@ -65,7 +65,16 @@ main {
 }
 
 @media @tablet {
-    .app-display-img {
+
+    #tablet {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    section.app-display-img {
         display: none;
     }
 
@@ -118,6 +127,15 @@ main {
 }
 
 @media @mobile {
+
+    #tablet {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
     article.top {
         display: block;
     }

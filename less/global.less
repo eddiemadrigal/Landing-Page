@@ -53,7 +53,7 @@ a {
 }
 
 .focus {
-  .border-bottom(2px solid @amber-white);
+  .border-bottom(2px, solid, @amber-white);
   max-height: 100%;
 
   @media @mobile {
@@ -113,4 +113,11 @@ form {
 h3.contact-title {
   text-align: center;
   margin-top: 5%;
+}
+
+#mobile, #tablet {
+  display: none;
+  background-color: yellow;
+  color: black;
+  text-align: center;
 }

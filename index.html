@@ -14,20 +14,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
-  <script>
-    function getWidth() {
-      var w = window.outerWidth;
-      var h = window.outerHeight;
-      var txt = "Window size: width=" + w + ", height=" + h;
-      document.getElementById("size").innerHTML = txt;
-    }
-  </script>
-
 </head>
 
-<body onresize="getWidth();" onload="getWidth();">
-</head> 
-<p id="size" style="text-align: center; padding: 0; margin: 0;"></p>
+<body>
+<p id="mobile">Mobile</p>
+<p id="tablet">Tablet</p>
   <div class="container">
     <header>
 
@@ -38,10 +29,10 @@
             <span onclick="toggleMenu();" class="top-nav-collapse-link"><i class="fas fa-bars fa-6x"></i></span = >
           </section>
           <ul id="navLinks">
-            <li class="right focus">Home</li>
+            <li class="right focus"><a href="#">Home</a></li>
             <li class="right"><a href="about.html">About</a></li class="right">
             <li class="right"><a href="contact.html">Contact</a></li class="right">
-            <li class="right">Download</li class="right">
+            <li class="right"><a href="#">Download</a></li class="right">
           </ul>
 
         </nav>

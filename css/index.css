@@ -239,6 +239,13 @@ h3.contact-title {
   text-align: center;
   margin-top: 5%;
 }
+#mobile,
+#tablet {
+  display: none;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+}
 .top-nav-collapse-link {
   display: none;
 }
@@ -389,7 +396,13 @@ main article.bottom-article section:first-child p {
   padding: 0;
 }
 @media (max-width: 800px) {
-  .app-display-img {
+  #tablet {
+    display: block;
+  }
+  #mobile {
+    display: none;
+  }
+  section.app-display-img {
     display: none;
   }
   .left-home-section {
@@ -429,6 +442,12 @@ main article.bottom-article section:first-child p {
   }
 }
 @media (max-width: 576px) {
+  #tablet {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
   article.top {
     display: block;
   }
